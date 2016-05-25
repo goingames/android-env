@@ -1,0 +1,4 @@
+image: daocloud.io/guangqiang/android
+
+script:
+    - echo "This is an android development environment."

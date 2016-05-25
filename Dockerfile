@@ -1,6 +1,7 @@
 FROM ubuntu:14.04
 MAINTAINER Eric
 
+# Install dependencies
 RUN dpkg --add-architecture i386                                    && \
     apt-get update                                                  && \
     apt-get install -y wget                                         && \
