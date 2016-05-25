@@ -1,4 +1,12 @@
 image: daocloud.io/guangqiang/android
 
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build -t goinchina/android-env .
+
 script:
-    - echo "This is an android development environment."
+  - docker ps -a
